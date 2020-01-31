@@ -13,6 +13,7 @@ import Login from './components/Login.vue'
 import Logout from './components/Logout.vue'
 import CardsPage from './components/CardsPage.vue'
 import CardDetails from './components/card/CardDetails.vue'
+import PrivacyPage from './components/PrivacyPage.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faChevronDown, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -38,6 +39,11 @@ const router = new VueRouter({
       path: '/logout',
       name: 'Logout',
       component: Logout
+    },
+    {
+      path: '/privacy',
+      name: 'Privacy',
+      component: PrivacyPage
     },
     {
       path: '/',
